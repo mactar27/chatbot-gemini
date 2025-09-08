@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Démo Chatbot Gemini</title>
+  <link rel="stylesheet" href="./chatbot.css"/>
+</head>
+<body>
+  <h1 style="font-family: system-ui; text-align:center; margin-top:40px;">Démo du Chatbot Gemini</h1>
+  <p style="text-align:center; font-family: system-ui;">Cliquez sur l'icône en bas à droite pour ouvrir le chatbot.</p>
+
+  <!-- Widget container -->
+  <div id="chatbot-widget"></div>
+
+  <script>
+    // Configuration du widget pour pointer vers ton backend
+    window.CHATBOT_CONFIG = {
+      apiBaseUrl: "http://localhost:5000",
+      projectName: "Mon Projet",
+      companyName: "Votre Entreprise",
+      enableAI: true
+    };
+  </script>
+  <script src="./chatbot.js"></script>
+</body>
+</html>
