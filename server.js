@@ -3,7 +3,6 @@ import bodyParser from "body-parser";
 import cors from "cors";
 import dotenv from "dotenv";
 import chatbotRoutes from "./routes/chatbot.js";
-import leadRoutes from "./routes/lead.js";
 
 dotenv.config();
 
@@ -19,7 +18,6 @@ app.use(express.static('public'));
 
 // Routes API
 app.use("/api/chatbot", chatbotRoutes);
-app.use("/api/lead", leadRoutes);
 
 // Route racine (optionnelle)
 app.get("/", (req, res) => {
